@@ -24,4 +24,41 @@ a {
 .fa-sun {
   color: #f39c12;
 }
+/* --------------------- */
 
+#fragment1 {
+  width: 25em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: frag1type 5s steps(20, end) 2s infinite;
+  animation: frag1type 5s steps(20, end) 1s infinite;
+}
+@keyframes frag1type {
+  from {
+    width: 0;
+  }
+  37% {
+    width: 25em;
+  }
+  49% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes frag1type {
+  from {
+    width: 0;
+  }
+  37% {
+    width: 25em;
+  }
+  49% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
