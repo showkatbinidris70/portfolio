@@ -69,9 +69,13 @@ export default function Navbar() {
                           <a className="nav-link">
                             <button
                               onClick={handleClick}
-                              className="border-0 bg-transparent px-3"
+                              className="border-0 bg-transparent"
                             >
-                              {theme ? "Light Theme" : "Dark Theme"}
+                              {theme ? (
+                                <i class="fas fa-moon"></i>
+                              ) : (
+                                <i class="fas fa-sun"></i>
+                              )}
                             </button>
                           </a>
                         </li>
